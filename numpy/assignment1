@@ -1,1 +1,32 @@
+import numpy as np
+
+numbers_list = list(range(1, 1001))
+numbers_array = np.array(range(1, 1001))
+print(numbers_list)
+print(numbers_array)
+
+#2
+print( numbers_array.nbytes)
+
+
+
+#3
+import time
+
+def compare_addition_speed():
+    numbers = np.arange(1, 10001)
+    start_time = time.time()
+    result = numbers + 5
+    end_time = time.time()
+    print( end_time - start_time)
+
+compare_addition_speed()
+
+
+
+#4
+ratings = np.array([1.2, 4.2, 2.3, 4.5, 1.5])
+doubled_ratings = ratings * 2
+print (ratings)
+print( doubled_ratings)
 
